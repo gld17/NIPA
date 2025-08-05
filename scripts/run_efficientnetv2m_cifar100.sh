@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python main.py --model_name efficientnetv2m --dataset cifar100 --gpu_id 1 --sample_num 200 --log_file ./results/efficientnetv2m/cifar100_accsim.log --batch_size 256

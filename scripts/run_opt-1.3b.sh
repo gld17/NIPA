@@ -1,0 +1,7 @@
+CUDA_VISIBLE_DEVICES=0 python main.py --model_name facebook/opt-1.3b --sample_num 200 --log_file ./results/opt-1.3b/layer21_arc_easy_accsim.log --dataset arc_easy --batch_size 256 --exclude_layer layers.21
+CUDA_VISIBLE_DEVICES=0 python main.py --model_name facebook/opt-1.3b --sample_num 200 --log_file ./results/opt-1.3b/layer22_arc_easy_accsim.log --dataset arc_easy --batch_size 256 --exclude_layer layers.22
+CUDA_VISIBLE_DEVICES=0 python main.py --model_name facebook/opt-1.3b --sample_num 200 --log_file ./results/opt-1.3b/layer23_arc_easy_accsim.log --dataset arc_easy --batch_size 256 --exclude_layer layers.23
+
+CUDA_VISIBLE_DEVICES=0 python main.py --model_name facebook/opt-1.3b --sample_num 200 --log_file ./results/opt-1.3b/layer21_piqa_accsim.log --dataset piqa --batch_size 128 --exclude_layer layers.21
+CUDA_VISIBLE_DEVICES=0 python main.py --model_name facebook/opt-1.3b --sample_num 200 --log_file ./results/opt-1.3b/layer22_piqa_accsim.log --dataset piqa --batch_size 128 --exclude_layer layers.22
+CUDA_VISIBLE_DEVICES=0 python main.py --model_name facebook/opt-1.3b --sample_num 200 --log_file ./results/opt-1.3b/layer23_piqa_accsim.log --dataset piqa --batch_size 128 --exclude_layer layers.23

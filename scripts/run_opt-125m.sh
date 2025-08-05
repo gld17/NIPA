@@ -1,0 +1,5 @@
+
+CUDA_VISIBLE_DEVICES=4 python main.py --model_name facebook/opt-125m --gpu_id 4 --sample_num 200 --log_file ./results/opt-125m/layer1_piqa_accsim.log --dataset piqa --batch_size 256 --exclude_layer layers.1. & \
+CUDA_VISIBLE_DEVICES=5 python main.py --model_name facebook/opt-125m --gpu_id 5 --sample_num 200 --log_file ./results/opt-125m/layer1_arc_easy_accsim.log --dataset arc_easy --batch_size 256 --exclude_layer layers.1. & \
+CUDA_VISIBLE_DEVICES=6 python main.py --model_name facebook/opt-125m --gpu_id 6 --sample_num 200 --log_file ./results/opt-125m/layer2_piqa_accsim.log --dataset piqa --batch_size 256 --exclude_layer layers.2. & \
+CUDA_VISIBLE_DEVICES=7 python main.py --model_name facebook/opt-125m --gpu_id 7 --sample_num 200 --log_file ./results/opt-125m/layer2_arc_easy_accsim.log --dataset arc_easy --batch_size 256 --exclude_layer layers.2.
